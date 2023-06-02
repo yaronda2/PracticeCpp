@@ -1,0 +1,103 @@
+11:50:45 **** Incremental Build of configuration Debug for project Stuck ****
+make all 
+Building file: ../SimpleStuckTest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SimpleStuckTest.d" -MT"SimpleStuckTest.o" -o "SimpleStuckTest.o" "../SimpleStuckTest.cpp"
+../SimpleStuckTest.cpp: In function ‘int main()’:
+../SimpleStuckTest.cpp:16:7: warning: variable ‘res’ set but not used [-Wunused-but-set-variable]
+   16 |  bool res = false;
+      |       ^~~
+Finished building: ../SimpleStuckTest.cpp
+ 
+Building target: Stuck
+Invoking: Cross G++ Linker
+g++  -o "Stuck"  ./SimpleStuck.o ./SimpleStuckTest.o   
+Finished building target: Stuck
+ 
+11:51:24 **** Incremental Build of configuration Debug for project Stuck ****
+make all 
+Building file: ../SimpleStuckTest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SimpleStuckTest.d" -MT"SimpleStuckTest.o" -o "SimpleStuckTest.o" "../SimpleStuckTest.cpp"
+Finished building: ../SimpleStuckTest.cpp
+ 
+Building target: Stuck
+Invoking: Cross G++ Linker
+g++  -o "Stuck"  ./SimpleStuck.o ./SimpleStuckTest.o   
+Finished building target: Stuck
+ 
+11:51:51 **** Incremental Build of configuration Debug for project Stuck ****
+make all 
+make: Nothing to be done for 'all'.
+11:51:57 **** Incremental Build of configuration Debug for project Stuck ****
+make all 
+make: Nothing to be done for 'all'.
+11:58:25 **** Incremental Build of configuration Debug for project Stuck ****
+make all 
+make: Nothing to be done for 'all'.
+11:59:58 **** Incremental Build of configuration Debug for project Stuck ****
+make all 
+Building file: ../SimpleStuckTest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SimpleStuckTest.d" -MT"SimpleStuckTest.o" -o "SimpleStuckTest.o" "../SimpleStuckTest.cpp"
+Finished building: ../SimpleStuckTest.cpp
+ 
+Building target: Stuck
+Invoking: Cross G++ Linker
+g++  -o "Stuck"  ./SimpleStuck.o ./SimpleStuckTest.o   
+Finished building target: Stuck
+ 
+12:00:05 **** Incremental Build of configuration Debug for project Stuck ****
+make all 
+make: Nothing to be done for 'all'.
+12:00:11 **** Incremental Build of configuration Debug for project Stuck ****
+make all 
+make: Nothing to be done for 'all'.
+12:01:36 **** Incremental Build of configuration Debug for project Stuck ****
+make all 
+Building file: ../SimpleStuckTest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SimpleStuckTest.d" -MT"SimpleStuckTest.o" -o "SimpleStuckTest.o" "../SimpleStuckTest.cpp"
+Finished building: ../SimpleStuckTest.cpp
+ 
+Building target: Stuck
+Invoking: Cross G++ Linker
+g++  -o "Stuck"  ./SimpleStuck.o ./SimpleStuckTest.o   
+Finished building target: Stuck
+ 
+12:01:39 **** Incremental Build of configuration Debug for project Stuck ****
+make all 
+make: Nothing to be done for 'all'.
+12:01:54 **** Incremental Build of configuration Debug for project Stuck ****
+make all 
+make: Nothing to be done for 'all'.
+15:04:36 **** Incremental Build of configuration Debug for project Stuck ****
+make all 
+make: Nothing to be done for 'all'.
+15:05:55 **** Incremental Build of configuration Debug for project Stuck ****
+make all 
+Building file: ../SimpleStuckTest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SimpleStuckTest.d" -MT"SimpleStuckTest.o" -o "SimpleStuckTest.o" "../SimpleStuckTest.cpp"
+Finished building: ../SimpleStuckTest.cpp
+ 
+Building target: Stuck
+Invoking: Cross G++ Linker
+g++  -o "Stuck"  ./SimpleStuck.o ./SimpleStuckTest.o   
+Finished building target: Stuck
+ 
+15:06:00 **** Incremental Build of configuration Debug for project Stuck ****
+make all 
+make: Nothing to be done for 'all'.
+15:07:58 **** Incremental Build of configuration Debug for project Stuck ****
+make all 
+Building file: ../SimpleStuckTest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SimpleStuckTest.d" -MT"SimpleStuckTest.o" -o "SimpleStuckTest.o" "../SimpleStuckTest.cpp"
+Finished building: ../SimpleStuckTest.cpp
+ 
+Building target: Stuck
+Invoking: Cross G++ Linker
+g++  -o "Stuck"  ./SimpleStuck.o ./SimpleStuckTest.o   
+Finished building target: Stuck
+ 

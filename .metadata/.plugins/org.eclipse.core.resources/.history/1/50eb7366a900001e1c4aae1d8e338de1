@@ -1,0 +1,16 @@
+/*
+ * SimpleStuckTest.cpp
+ *
+ *  Created on: 1 Jun 2023
+ *      Author: yaron
+ */
+
+#include "SimpleStuck.h"
+
+
+using namespace std;
+
+int main()
+{
+	cout << "This is my Stuck!" << endl;
+}

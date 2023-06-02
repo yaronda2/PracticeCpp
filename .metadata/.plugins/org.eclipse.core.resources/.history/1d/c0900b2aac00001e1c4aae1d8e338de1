@@ -1,0 +1,25 @@
+/*
+ * SimpleStuck.h
+ *
+ *  Created on: 1 Jun 2023
+ *      Author: yaron
+ */
+
+#ifndef SIMPLESTUCK_H_
+#define SIMPLESTUCK_H_
+
+class SimpleStuck {
+public:
+	SimpleStuck(unsigned int _capacity  = 10);
+	virtual ~SimpleStuck();
+	SimpleStuck(const SimpleStuck &other);
+	virtual void Push() = 0;
+	virtual void Pop() = 0;
+	virtual void Peek() = 0;
+
+private:
+	unsigned int capacity;
+
+};
+
+#endif /* SIMPLESTUCK_H_ */

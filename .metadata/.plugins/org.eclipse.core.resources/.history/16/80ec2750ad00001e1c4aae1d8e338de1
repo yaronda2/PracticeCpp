@@ -1,0 +1,29 @@
+/*
+ * SimpleStuck.h
+ *
+ *  Created on: 1 Jun 2023
+ *      Author: yaron
+ */
+#include <iostream>
+#include <list>
+
+#ifndef SIMPLESTUCK_H_
+#define SIMPLESTUCK_H_
+
+using namespace std;
+
+class SimpleStuck {
+public:
+	explicit SimpleStuck();
+	virtual ~SimpleStuck();
+	SimpleStuck(const SimpleStuck &other);
+	virtual void Push() = 0;
+	virtual void Pop() = 0;
+	virtual void Peek() = 0;
+
+private:
+	std::list<int> storage;
+
+};
+
+#endif /* SIMPLESTUCK_H_ */

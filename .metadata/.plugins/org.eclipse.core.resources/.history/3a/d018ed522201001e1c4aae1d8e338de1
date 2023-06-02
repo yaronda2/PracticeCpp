@@ -1,0 +1,35 @@
+/*
+ * SimpleStuckTest.cpp
+ *
+ *  Created on: 1 Jun 2023
+ *      Author: yaron
+ */
+
+#include "SimpleStuck.h"
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	SimpleStuck stuck;
+
+	for(int i = 0; i < 5 ; ++i)
+	{
+		stuck.Push(i);
+	}
+
+	bool res = false;
+
+	if(stuck.size() != 5)
+	{
+		res = true;
+		cout << "stuck size fail" << endl;
+	}
+
+	if()
+	cout << stuck.Peek() << endl;
+
+}
+
+// 3 4 67 12 -1

@@ -1,0 +1,18 @@
+/*
+ * SimpleStuck.cpp
+ *
+ *  Created on: 1 Jun 2023
+ *      Author: yaron
+ */
+
+#include "SimpleStuck.h"
+
+SimpleStuck::SimpleStuck() {
+	// TODO Auto-generated constructor stub
+
+}
+
+SimpleStuck::~SimpleStuck() {
+	// TODO Auto-generated destructor stub
+}
+
