@@ -1,5 +1,5 @@
 /*
- * SimpleStuckTest.cpp
+ * SimplemystuckTest.cpp
  *
  *  Created on: 1 Jun 2023
  *      Author: yaron
@@ -9,53 +9,64 @@
 #include <iostream>
 
 using namespace std;
+using namespace hrd24;
+
+struct limits
+{
+    int min;
+};
 
 int main()
 {
-	SimpleStuck stuck;
+	limits mydata ;
+	mydata.min = 0;
+	SimpleStuck <limits>mystuck1;
+
 	bool res = false;
 
 	for(int i = 0; i < 5 ; ++i)
 	{
-		stuck.Push(i);
+		++mydata.min;
+		mystuck1.Push(mydata);
+
 	}
 
-	if(stuck.size() != 5 || stuck.Peek() != 4)
+	if(mystuck1.size() != 5 || mystuck1.Peek().min != 5)
 	{
 		res = true;
-		cout << "stuck step1 fail" << endl;
+		cout << "mystuck step1 fail" << endl;
 	}
 
-	stuck.Pop();
+	mystuck1.Pop();
 
-	if(stuck.size() != 4 || stuck.Peek() != 3)
+	if(mystuck1.size() != 4 || mystuck1.Peek().min != 4)
 	{
 		res = true;
-		cout << "stuck step2 fail" << endl;
+		cout << "mystuck step2 fail" << endl;
 	}
 
-	stuck.Pop();
-	stuck.Pop();
-	stuck.Pop();
+	mystuck1.Pop();
+	mystuck1.Pop();
+	mystuck1.Pop();
 
-	if(stuck.size() != 1 || stuck.IsEmpty() != false)
+	if(mystuck1.size() != 1 || mystuck1.IsEmpty() != false)
 	{
 		res = true;
-		cout << "stuck step3 fail" << endl;
+		cout << "mystuck step3 fail" << endl;
 	}
 
-	stuck.Pop();
-	if(stuck.IsEmpty() != true)
+	mystuck1.Pop();
+	if(mystuck1.IsEmpty() != true)
 	{
 		res = true;
-		cout << "stuck step3 fail" << endl;
+		cout << "mystuck step3 fail" << endl;
 	}
 
 	if(!res)
 	{
 		cout << "Test Pass !!!" << endl;
 	}
-	//readme
+
 }
 
 

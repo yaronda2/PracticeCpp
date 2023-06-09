@@ -1,0 +1,42 @@
+/*
+ * SimpleStuck.cpp
+ *
+ *  Created on: 1 Jun 2023
+ *      Author: yaron
+ */
+
+#include "SimpleStuck.h"
+
+<typename T> SimpleStuck<T>::SimpleStuck() {
+	// TODO Auto-generated constructor stub
+
+}
+
+SimpleStuck::~SimpleStuck() {
+	// TODO Auto-generated destructor stub
+}
+
+<typename T> bool SimpleStuck::IsEmpty()
+{
+	return storage.empty();
+}
+
+<typename T> void SimpleStuck<T>::Push(T num)
+{
+	storage.push_back(num);
+}
+
+void SimpleStuck::Pop()
+{
+	storage.pop_back();
+}
+
+int SimpleStuck::Peek()
+{
+	return storage.back();
+}
+
+int SimpleStuck::size()
+{
+	return storage.size();
+}

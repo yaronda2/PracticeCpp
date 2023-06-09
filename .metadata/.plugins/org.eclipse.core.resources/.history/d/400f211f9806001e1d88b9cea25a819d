@@ -1,0 +1,62 @@
+/*
+ * SimplemystuckTest.cpp
+ *
+ *  Created on: 1 Jun 2023
+ *      Author: yaron
+ */
+
+#include "Simplemystuck.h"
+#include <iostream>
+
+using namespace std;
+using namespace hrd24;
+int main()
+{
+	//Simplemystuck <float>mystuck;
+	Simplemystuck <int>mystuck;
+	bool res = false;
+
+	for(int i = 0; i < 5 ; ++i)
+	{
+		mystuck.Push(i);
+	}
+
+	if(mystuck.size() != 5 || mystuck.Peek() != 4)
+	{
+		res = true;
+		cout << "mystuck step1 fail" << endl;
+	}
+
+	mystuck.Pop();
+
+	if(mystuck.size() != 4 || mystuck.Peek() != 3)
+	{
+		res = true;
+		cout << "mystuck step2 fail" << endl;
+	}
+
+	mystuck.Pop();
+	mystuck.Pop();
+	mystuck.Pop();
+
+	if(mystuck.size() != 1 || mystuck.IsEmpty() != false)
+	{
+		res = true;
+		cout << "mystuck step3 fail" << endl;
+	}
+
+	mystuck.Pop();
+	if(mystuck.IsEmpty() != true)
+	{
+		res = true;
+		cout << "mystuck step3 fail" << endl;
+	}
+
+	if(!res)
+	{
+		cout << "Test Pass !!!" << endl;
+	}
+
+}
+
+
